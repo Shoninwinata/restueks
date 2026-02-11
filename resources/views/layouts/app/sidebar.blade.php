@@ -15,19 +15,19 @@
                     <flux:sidebar.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>
                         {{ __('Dashboard') }}
                     </flux:sidebar.item>
-                    <flux:sidebar.item icon="user" :href="route('users.index')" :current="request()->routeIs('users')" wire:navigate>
+                    <flux:sidebar.item icon="user" :href="route('users.index')" :current="request()->routeIs('users.index')" wire:navigate>
                         {{ __('Admin') }}
                     </flux:sidebar.item>
-                    <flux:sidebar.item icon="file-document" :href="route('users.index')" :current="request()->routeIs('users')" wire:navigate>
+                    <flux:sidebar.item icon="document" :href="route('pages.index')" :current="request()->routeIs('pages.index')" wire:navigate>
                         {{ __('Pages') }}
                     </flux:sidebar.item>
-                    <flux:sidebar.item icon="briefcase" :href="route('users.index')" :current="request()->routeIs('users')" wire:navigate>
+                    <flux:sidebar.item icon="briefcase" :href="route('users.index')" :current="request()->routeIs('services.index')" wire:navigate>
                         {{ __('Services') }}
                     </flux:sidebar.item>
-                    <flux:sidebar.item icon="image-multiple" :href="route('users.index')" :current="request()->routeIs('users')" wire:navigate>
+                    <flux:sidebar.item icon="users" :href="route('portofolios.index')" :current="request()->routeIs('portofolios.index')" wire:navigate>
                         {{ __('Portofolios') }}
                     </flux:sidebar.item>
-                    <flux:sidebar.item icon="phone" :href="route('users.index')" :current="request()->routeIs('users')" wire:navigate>
+                    <flux:sidebar.item icon="phone" :href="route('contacts.index')" :current="request()->routeIs('contacts')" wire:navigate>
                         {{ __('Contacts') }}
                     </flux:sidebar.item>
                 </flux:sidebar.group>
